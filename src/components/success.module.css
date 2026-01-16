@@ -1,0 +1,90 @@
+.banner1 {
+    background-color: #ce2829;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Yatayda her şeyi ortalar */
+    justify-content: flex-start; /* İçeriği yukarıdan başlatır */
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    padding-bottom: 50px;
+    text-align: center; /* Metinlerin kendi içinde ortalanmasını sağlar */
+}
+
+.mainLogo {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 100%; /* Genişliği kapla ki text-align center işe yarasın */
+}
+
+.yellowItalic {
+    color: #fdc913;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.8rem;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.orderTitle {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.divider {
+    width: 600px;
+    max-width: 80%; /* Mobilde taşmasın diye */
+    border: 0.5px solid white;
+    margin: 40px auto;
+}
+
+.pizzaName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.orderDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* P etiketlerini ortalar */
+    line-height: 2;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.orderDetails p {
+    margin: 5px 0;
+}
+
+.summaryCard {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 350px;
+    max-width: 90%;
+    margin: 0 auto; /* Kutu kendi içinde ortalansın */
+}
+
+.summaryTitle {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center; /* Kutu başlığını da ortaladık */
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between; /* Yazı sağda, fiyat solda kalsın ama satır ortada */
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .orderTitle { font-size: 2.5rem; }
+}

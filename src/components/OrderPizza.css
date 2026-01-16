@@ -1,0 +1,500 @@
+#root {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+h3{
+  font-family: "Barlow";
+margin-top: 20px;
+}
+p{
+  font-family: "Barlow";
+}
+p .sub-text {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+.logo1 {
+    position: relative;
+    z-index: 2;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.order-header {
+    background-color: #CE2829;
+    font-family: Barlow;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 10%;
+}
+.pizza-top-image {
+width: 300px;        /* Genişliği sabitledik */
+    height: 200px;       /* Yüksekliği sabitledik */
+    object-fit: cover;   /* Resmin bozulmadan kutuyu doldurmasını sağlar */
+    border-radius: 8px;  /* Opsiyonel: Köşeleri hafifçe yuvarlar */
+}
+.order-header h1 {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0; /* h1'in kendi otomatik boşluklarını sıfırlıyoruz */
+    line-height: 1.2;
+    font-family: Barlow;
+}
+h2{
+font-family: Barlow;
+}
+.order-header nav {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 17%;    
+    margin-top: 10px;
+}
+.order-container {
+  max-width : 100%;
+  color: #292929;
+}
+.section{
+  max-width: 600px;
+  margin: auto;
+  font-family: Barlow;
+  background-color:#FAF7F2;
+}
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  color: #5f5f5f;
+  font-size: 14px;
+  align-items: right;
+  gap: 100px;
+  
+}
+
+.description {
+  color: #5f5f5f;
+  line-height: 1.6;
+  font-family: 'Barlow', sans-serif;
+}
+
+.selection-row {
+  display: flex;
+    justify-content: space-between;
+}
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Butonun genel stili (Görseldeki gibi) */
+.radio-label {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #FAF7F2; /* Görseldeki açık bej/krem tonu */
+  color: #5F5F5F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+/* Üzerine gelince efekt */
+.radio-label:hover {
+  background-color: #F0EDE8;
+}
+
+/* Seçildiğinde (Tıklandığında) Stil Değişimi */
+.radio-label.selected {
+  background-color: #FDC913; /* Pizza sitelerine uygun sarı/turuncu tonu */
+  color: #000;
+  font-weight: 700;
+  transform: scale(1.05); /* Seçileni hafif öne çıkarır */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.required {
+  color: #ce2829;
+}
+input { font-family: serif !important;}
+.name-input {
+    font-family: 'Barlow', sans-serif !important;
+    font-size: 2rem; /* 2rem çok büyük olabilir, önce fontu kontrol etmek için küçülttük */
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+input, button, select, textarea, label {
+    font-family: 'Barlow', sans-serif !important;
+}
+.radio-group {
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  background: #FAF7F2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Izgara görünümü */
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+/* Orijinal kutuyu gizle */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Yeni Özel Kutucuk (Custom Checkbox) */
+.custom-checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 4px; /* Hafif yuvarlatılmış köşeler */
+  margin-right: 12px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s;
+}
+
+/* Checkbox işaretlendiğinde kutu rengi değişsin */
+.checkbox-container input:checked ~ .custom-checkbox {
+  background-color: #FDC913; /* Sarı tonu */
+}
+
+/* İçine "Check" (Tik) işareti ekleme */
+.custom-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #292929;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* İşaretliyken tiki göster */
+.checkbox-container input:checked ~ .custom-checkbox:after {
+  display: block;
+}
+
+/* Disabled (Engelli) durumu için stil */
+.checkbox-container input:disabled ~ .checkbox-text {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.checkbox-container input:disabled ~ .custom-checkbox {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.checkbox-item {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.note-section {
+  width: 95%;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  box-sizing: initial;
+  padding: -20;
+}
+.note-section textarea {
+  width: 90%;
+  height: 20px;
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  resize: none;
+}
+
+.divider {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Counter'ı yukarı hizalar */
+  gap: 20px;
+}
+/* Sol Taraf (Counter) */
+.counter-left {
+  flex: 0 0 auto; /* İçeriği kadar yer kaplasın, büyümesin */
+}
+
+.counter-box {
+  display: flex;
+  background: #FAF7F2; /* Görseldeki açık krem rengi */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.counter-box button {
+  background: transparent;
+  border: none;
+  padding: 15px 18px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.counter-box .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  font-weight: bold;
+}
+
+/* Sağ Taraf (Özet Kartı) */
+.summary-right {
+  flex: 1; /* Kalan tüm boşluğu doldurur */
+}
+
+.summary-card {
+  background: #FAF7F2; /* Krem arka plan */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Kırmızı "Toplam" yazısı */
+.summary-line.total {
+  color: #CE2829; 
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Sarı Buton */
+.order-button {
+  width: 100%;
+  background: #FDC913; /* Canlı sarı */
+  border: none;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.order-button:hover {
+  background: #eab811;
+}
+@media (max-width: 768px) {
+    .description{
+      margin-top: 5%;
+    }
+    /* Header ve Navigasyon Düzenlemesi */
+    .order-header nav {
+      display:flex;
+      justify-content:flex-start;
+      margin-right: 45%;
+    }
+
+    /* Ana içerik alanı */
+    .section {
+        max-width: 90%;       /* Kenarlardan biraz boşluk bırakıyoruz */
+        margin: 0 auto;
+        font-family: 'Barlow';
+        margin-top: 30%;
+    }
+
+    /* Fiyat ve Puan kısmını alt alta al */
+    .price-rating {
+      display:flex;
+        align-items: center;
+        gap: 10px;
+       
+    }
+
+    .stats {
+        gap: 20px;            /* 100px çok geniş, mobilde daraltıyoruz */
+        justify-content: flex-start;
+    }
+
+    
+    .selection-row {
+      display:flex;
+      justify-content: space-between;
+    }
+
+    /* Malzeme listesini 3 sütundan 2 veya 1 sütuna düşür */
+    .checkbox-grid {
+        grid-template-columns: repeat(2, 1fr); /* Küçük ekranda 2 sütun daha okunaklıdır */
+    }
+
+    /* Sipariş özet kutusunu ve miktar butonlarını dikey yap */
+.footer-section {
+    display: flex !important;
+    flex-direction: row !important; /* Yan yana dizilim */
+    flex-wrap: wrap !important;     /* Sığmayanları alta at */
+    gap: 12px !important;
+    padding: 15px !important;
+    align-items: stretch !important;
+  }
+
+  /* 1. Özet Kartı: En Üste ve Tam Genişlik */
+  .summary-card {
+    order: 1 !important;
+    width: 100% !important;
+    background: #FAF7F2 !important; /* Krem arka plan */
+    border: 1px solid #E0E0E0 !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin: 0 0 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 2. Adet Seçici (Counter): Sol Alt */
+  .counter-box {
+    order: 2 !important;
+    flex: 1 !important; /* Küçük alan kaplasın */
+    display: flex !important;
+    background: #FDC913 !important; /* Sarı kenarlar */
+    border-radius: 6px !important;
+    overflow: hidden !important;
+    height: 52px !important; /* Butonla aynı yükseklik */
+  }
+
+  .counter-box button {
+    flex: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+  }
+
+  .counter-box .count {
+    flex: 1.2 !important;
+    background: #FFFFFF !important; /* Orta beyaz kısım */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+  }
+
+  /* 3. Sipariş Ver Butonu: Sağ Alt */
+  .order-button {
+    order: 3 !important;
+    flex: 2 !important; /* Daha geniş alan kaplasın */
+    background: #FDC913 !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    height: 52px !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+  }
+
+  /* Kart içindeki yazıları düzeltme */
+  .summary-line {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 8px !important;
+    font-family: 'Barlow', sans-serif !important;
+  }
+
+  .summary-line.total {
+    color: #CE2829 !important; /* Kırmızı Toplam Yazısı */
+    font-weight: bold !important;
+    margin-top: 5px !important;
+  }
+.order-button:hover {
+  background: #eab811;
+}
+
+.order-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Çok küçük telefonlar için (480px altı) ekstra dokunuş */
+@media (max-width: 480px) {
+    .checkbox-grid {
+        grid-template-columns: 1fr; /* Her malzeme tek satır */
+    }
+    
+    .order-header h1 {
+        font-size: 28px;      /* Başlığı biraz küçültüyoruz */
+    }
+}
+}
