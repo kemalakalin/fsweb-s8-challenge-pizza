@@ -30,29 +30,29 @@ export default function Index({ onAciktimClick }) {
     <div className="menu">
         <nav>
           <a href="#kore">
-            <img src="public/assets/iteration-2/icons/1.svg" className="menu-icon" /> Yeni! Kore
+            <img src="/assets/iteration-2/icons/1.svg" className="menu-icon" /> Yeni! Kore
           </a>
           <a href="#pizza">
-            <img src="public/assets/iteration-2/icons/2.svg" className="menu-icon" /> Pizza
+            <img src="/assets/iteration-2/icons/2.svg" className="menu-icon" /> Pizza
           </a>
           <a href="#burger">
-            <img src="public/assets/iteration-2/icons/3.svg" className="menu-icon" /> Burger
+            <img src="/assets/iteration-2/icons/3.svg" className="menu-icon" /> Burger
           </a>
           <a href="#kizartmalar">
-            <img src="public/assets/iteration-2/icons/4.svg" className="menu-icon" /> Kızartmalar
+            <img src="/assets/iteration-2/icons/4.svg" className="menu-icon" /> Kızartmalar
           </a>
           <a href="#fastfood">
-            <img src="public/assets/iteration-2/icons/5.svg" className="menu-icon" /> Fast Food
+            <img src="/assets/iteration-2/icons/5.svg" className="menu-icon" /> Fast Food
           </a>
           <a href="#icecek">
-            <img src="public/assets/iteration-2/icons/6.svg" className="menu-icon" /> Gazlı İçeçek
+            <img src="/assets/iteration-2/icons/6.svg" className="menu-icon" /> Gazlı İçeçek
           </a>
         </nav>
       </div>
 
       <section className="lezzetus-container">
         <div className="card-wrapper buyuk-kart">
-          <img src="public/assets/iteration-2/cta/kart-1.png" className="pz" />
+          <img src="/assets/iteration-2/cta/kart-1.png" className="pz" />
           <div className="card-metin sol-buyuk">
             <h2>Özel</h2>
             <h2>Lezzetus</h2>
@@ -63,7 +63,7 @@ export default function Index({ onAciktimClick }) {
 
         <div className="sag-kart-grup">
           <div className="card-wrapper kucuk-kart">
-            <img src="public/assets/iteration-2/cta/kart-2.png" className="brgr" />
+            <img src="/assets/iteration-2/cta/kart-2.png" className="brgr" />
             <div className="card-metin sag-kucuk">
               <h3>Hackathlon</h3>
               <h3>Burger Menü</h3>
@@ -72,7 +72,7 @@ export default function Index({ onAciktimClick }) {
           </div>
 
           <div className="card-wrapper kucuk-kart">
-            <img src="public/assets/iteration-2/cta/kart-3.png" className="kry" />
+            <img src="/assets/iteration-2/cta/kart-3.png" className="kry" />
             <div className="card-metin sag-kucuk">
               <h4>Çoooook hızlı</h4>
               <h4>npm gibi kurye</h4>
@@ -90,29 +90,29 @@ export default function Index({ onAciktimClick }) {
       <div className="mn">
         <nav>
           <a href="#ramen">
-            <img src="public/assets/iteration-2/icons/1.svg" className="menu-icon" />Ramen
+            <img src="/assets/iteration-2/icons/1.svg" className="menu-icon" />Ramen
           </a>
           <a href="#pizza">
-            <img src="public/assets/iteration-2/icons/2.svg" className="menu-icon" />Pizza
+            <img src="/assets/iteration-2/icons/2.svg" className="menu-icon" />Pizza
           </a>
           <a href="#burger">
-            <img src="public/assets/iteration-2/icons/3.svg" className="menu-icon" />Burger
+            <img src="/assets/iteration-2/icons/3.svg" className="menu-icon" />Burger
           </a>
           <a href="#fries">
-            <img src="public/assets/iteration-2/icons/4.svg" className="menu-icon" />French fries
+            <img src="/assets/iteration-2/icons/4.svg" className="menu-icon" />French fries
           </a>
           <a href="#fastfood">
-            <img src="public/assets/iteration-2/icons/5.svg" className="menu-icon" />Fast Food
+            <img src="/assets/iteration-2/icons/5.svg" className="menu-icon" />Fast Food
           </a>
           <a href="#drinks">
-            <img src="public/assets/iteration-2/icons/6.svg" className="menu-icon" />Soft Drinks
+            <img src="/assets/iteration-2/icons/6.svg" className="menu-icon" />Soft Drinks
           </a>
         </nav>
       </div>
 
       <div className="a">
         <a href="#terminal-pizza">
-          <img src="public/assets/iteration-2/pictures/food-1.png" alt="Terminal Pizza Resmi" className="menu-icon" />
+          <img src="/assets/iteration-2/pictures/food-1.png" alt="Terminal Pizza Resmi" className="menu-icon" />
           <p>Terminal Pizza</p>
           <div className="rating-info">
             <p className="rating">4.9</p>
@@ -122,7 +122,7 @@ export default function Index({ onAciktimClick }) {
         </a>
 
         <a href="#absolute-pizza">
-          <img src="public/assets/iteration-2/pictures/food-2.png" alt="Position Absolute Acı Pizza Resmi" className="menu-icon" />
+          <img src="/assets/iteration-2/pictures/food-2.png" alt="Position Absolute Acı Pizza Resmi" className="menu-icon" />
           <p>Position Absolute Acı Pizza</p>
           <div className="rating-info">
             <p className="rating">4.9</p>
@@ -132,7 +132,7 @@ export default function Index({ onAciktimClick }) {
         </a>
 
         <a href="#useeffect-burger">
-          <img src="public/assets/iteration-2/pictures/food-3.png" alt="useEffect Tavuklu Burger Resmi" className="menu-icon" />
+          <img src="/assets/iteration-2/pictures/food-3.png" alt="useEffect Tavuklu Burger Resmi" className="menu-icon" />
           <p>useEffect Tavuklu Burger</p>
           <div className="rating-info">
             <p className="rating">4.9</p>
@@ -145,24 +145,24 @@ export default function Index({ onAciktimClick }) {
       <footer>
         <div className="footer-ana-icerik container">
           <div className="footer-sol">
-            <img src="public/assets/iteration-2/footer/logo-footer.svg" className="footer-logo" />
+            <img src="/assets/iteration-2/footer/logo-footer.svg" className="footer-logo" />
 
             <ul className="iletisim-listesi">
               <li>
                 <a href="#adres">
-                  <img src="public/assets/iteration-2/footer/icons/icon-1.png" className="footer-icon" />
+                  <img src="/assets/iteration-2/footer/icons/icon-1.png" className="footer-icon" />
                   341 Londonderry Road, <br />Istanbul Türkiye
                 </a>
               </li>
               <li>
                 <a href="mailto:aciktim@teknolojikyemekler.com">
-                  <img src="public/assets/iteration-2/footer/icons/icon-2.png" className="footer-icon" />
+                  <img src="/assets/iteration-2/footer/icons/icon-2.png" className="footer-icon" />
                   aciktim@teknolojikyemekler.com
                 </a>
               </li>
               <li>
                 <a href="tel:+90216123456">
-                  <img src="public/assets/iteration-2/footer/icons/icon-3.png" className="footer-icon" />
+                  <img src="/assets/iteration-2/footer/icons/icon-3.png" className="footer-icon" />
                   +90 216 123 45 67
                 </a>
               </li>
@@ -182,12 +182,12 @@ export default function Index({ onAciktimClick }) {
           <div className="insta-galeri">
             <h3>Instagram</h3>
             <div className="insta-resimler">
-              <img src="public/assets/iteration-2/footer/insta/li-0.png" alt="Instagram görseli 1" />
-              <img src="public/assets/iteration-2/footer/insta/li-1.png" alt="Instagram görseli 2" />
-              <img src="public/assets/iteration-2/footer/insta/li-2.png" alt="Instagram görseli 3" />
-              <img src="public/assets/iteration-2/footer/insta/li-3.png" alt="Instagram görseli 4" />
-              <img src="public/assets/iteration-2/footer/insta/li-4.png" alt="Instagram görseli 5" />
-              <img src="public/assets/iteration-2/footer/insta/li-5.png" alt="Instagram görseli 6" />
+              <img src="/assets/iteration-2/footer/insta/li-0.png" alt="Instagram görseli 1" />
+              <img src="/assets/iteration-2/footer/insta/li-1.png" alt="Instagram görseli 2" />
+              <img src="/assets/iteration-2/footer/insta/li-2.png" alt="Instagram görseli 3" />
+              <img src="/assets/iteration-2/footer/insta/li-3.png" alt="Instagram görseli 4" />
+              <img src="/assets/iteration-2/footer/insta/li-4.png" alt="Instagram görseli 5" />
+              <img src="/assets/iteration-2/footer/insta/li-5.png" alt="Instagram görseli 6" />
             </div>
           </div>
         </div>
