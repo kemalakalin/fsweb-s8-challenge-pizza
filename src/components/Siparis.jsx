@@ -109,7 +109,7 @@ const handleSubmit = (e) => {
     <>
       <div className="order-container">
         <header className="order-header">
-          <img src="/images/iteration-1-images/logo.svg" alt="Pizza Logo" className="logo1" />
+          <img src="images/iteration-1-images/logo.svg" alt="Pizza Logo" className="logo1" />
           <img src="public/assets/iteration-2/pictures/form-banner.png" alt="Pizza Top" className="pizza-top-image" />
           <nav>Anasayfa - Seçenekler - <span className="required">Sipariş Oluştur</span></nav>
         </header>
