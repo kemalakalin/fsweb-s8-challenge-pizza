@@ -110,7 +110,7 @@ const handleSubmit = (e) => {
       <div className="order-container">
         <header className="order-header">
           <img src="images/iteration-1-images/logo.svg" alt="Pizza Logo" className="logo1" />
-          <img src="public/assets/iteration-2/pictures/form-banner.png" alt="Pizza Top" className="pizza-top-image" />
+          <img src="/assets/iteration-2/pictures/form-banner.png" alt="Pizza Top" className="pizza-top-image" />
           <nav>Anasayfa - Seçenekler - <span className="required">Sipariş Oluştur</span></nav>
         </header>
 
@@ -237,24 +237,24 @@ const handleSubmit = (e) => {
       <footer>
         <div className="footer-ana-icerik container">
           <div className="footer-sol">
-            <img src="public/assets/iteration-2/footer/logo-footer.svg" className="footer-logo" />
+            <img src="/assets/iteration-2/footer/logo-footer.svg" className="footer-logo" />
 
             <ul className="iletisim-listesi">
               <li>
                 <a href="#adres">
-                  <img src="public/assets/iteration-2/footer/icons/icon-1.png" className="footer-icon" />
+                  <img src="/iteration-2/footer/icons/icon-1.png" className="footer-icon" />
                   341 Londonderry Road, <br />Istanbul Türkiye
                 </a>
               </li>
               <li>
                 <a href="mailto:aciktim@teknolojikyemekler.com">
-                  <img src="public/assets/iteration-2/footer/icons/icon-2.png" className="footer-icon" />
+                  <img src="assets/iteration-2/footer/icons/icon-2.png" className="footer-icon" />
                   aciktim@teknolojikyemekler.com
                 </a>
               </li>
               <li>
                 <a href="tel:+90216123456">
-                  <img src="public/assets/iteration-2/footer/icons/icon-3.png" className="footer-icon" />
+                  <img src="/assets/iteration-2/footer/icons/icon-3.png" className="footer-icon" />
                   +90 216 123 45 67
                 </a>
               </li>
@@ -274,12 +274,12 @@ const handleSubmit = (e) => {
           <div className="insta-galeri">
             <h3>Instagram</h3>
             <div className="insta-resimler">
-              <img src="public/assets/iteration-2/footer/insta/li-0.png" alt="Instagram görseli 1" />
-              <img src="public/assets/iteration-2/footer/insta/li-1.png" alt="Instagram görseli 2" />
-              <img src="public/assets/iteration-2/footer/insta/li-2.png" alt="Instagram görseli 3" />
-              <img src="public/assets/iteration-2/footer/insta/li-3.png" alt="Instagram görseli 4" />
-              <img src="public/assets/iteration-2/footer/insta/li-4.png" alt="Instagram görseli 5" />
-              <img src="public/assets/iteration-2/footer/insta/li-5.png" alt="Instagram görseli 6" />
+              <img src="/assets/iteration-2/footer/insta/li-0.png" alt="Instagram görseli 1" />
+              <img src="/assets/iteration-2/footer/insta/li-1.png" alt="Instagram görseli 2" />
+              <img src="/assets/iteration-2/footer/insta/li-2.png" alt="Instagram görseli 3" />
+              <img src="/assets/iteration-2/footer/insta/li-3.png" alt="Instagram görseli 4" />
+              <img src="/assets/iteration-2/footer/insta/li-4.png" alt="Instagram görseli 5" />
+              <img src="/assets/iteration-2/footer/insta/li-5.png" alt="Instagram görseli 6" />
             </div>
           </div>
         </div>
