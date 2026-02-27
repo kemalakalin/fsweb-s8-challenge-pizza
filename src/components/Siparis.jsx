@@ -109,7 +109,7 @@ const handleSubmit = (e) => {
     <>
       <div className="order-container">
         <header className="order-header">
-          <img src="images/iteration-1-images/logo.svg" alt="Pizza Logo" className="logo1" />
+          <img src="/images/iteration-1-images/logo.svg" alt="Pizza Logo" className="logo1" />
           <img src="/assets/iteration-2/pictures/form-banner.png" alt="Pizza Top" className="pizza-top-image" />
           <nav>Anasayfa - Seçenekler - <span className="required">Sipariş Oluştur</span></nav>
         </header>
@@ -242,7 +242,7 @@ const handleSubmit = (e) => {
             <ul className="iletisim-listesi">
               <li>
                 <a href="#adres">
-                  <img src="/iteration-2/footer/icons/icon-1.png" className="footer-icon" />
+                  <img src="/assets/iteration-2/footer/icons/icon-1.png" className="footer-icon" />
                   341 Londonderry Road, <br />Istanbul Türkiye
                 </a>
               </li>
