@@ -7,7 +7,7 @@ export default function Index({ onAciktimClick }) {
     <>
     <div className="banner1">
       <img 
-        src="images/iteration-1-images/home-banner.png"
+        src="/images/iteration-1-images/home-banner.png"
         className="banner" 
         alt="Home Banner" 
       />
