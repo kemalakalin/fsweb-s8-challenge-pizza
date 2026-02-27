@@ -254,7 +254,7 @@ const handleSubmit = (e) => {
               </li>
               <li>
                 <a href="tel:+90216123456">
-                  <img src="/assets/iteration-2/footer/icons/icon-3.png" className="footer-icon" />
+                  <img src="./assets/iteration-2/footer/icons/icon-3.png" className="footer-icon" />
                   +90 216 123 45 67
                 </a>
               </li>
